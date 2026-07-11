@@ -24,3 +24,12 @@
 - Python 3
 - OOP
 - Dataclasses
+## Usage
+
+```python
+from account import Account, Transaction
+
+account = Account("Oleg", 1000)
+account.add_transaction(Transaction(-250, "Shopping"))
+
+print(account.balance)
